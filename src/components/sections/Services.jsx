@@ -18,16 +18,16 @@ const Services = () => {
       vector: commercialVector,
     },
     {
-        id: 2,
-        name: "Residential",
-        image: residential,
-        vector: residentialVector,
+      id: 2,
+      name: "Residential",
+      image: residential,
+      vector: residentialVector,
     },
     {
-        id: 3,
-        name: "End-of-Lease",
-        image: eol,
-        vector: eolVector,
+      id: 3,
+      name: "End-of-Lease",
+      image: eol,
+      vector: eolVector,
     },
   ];
   return (

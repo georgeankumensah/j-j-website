@@ -1,8 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .default-font{
     font-family: 'Montserrat', sans-serif;
+}
+.hero-text-gradient{
+    background: linear-gradient(264deg, #800080 28.61%, #3956F0 78.72%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: "Montserrat";
+font-size: 2.875rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }

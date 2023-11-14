@@ -9,16 +9,36 @@ const Navbar = () => {
         <img src={logo} alt="logo" />
       </Link>
       <ul
-        className="flex @apply text-[#1E1E1E] gap-[2.56rem] text-lg not-italic font-normal leading-[normal] default-font;
-  "
+        className="flex items-center @apply text-[#1E1E1E] gap-[2.56rem] text-lg not-italic font-normal leading-[normal] default-font"
       >
-        <NavLink to="/">
+        <NavLink
+          to="/"
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending p-2.5"
+              : isActive
+              ? "bg-[#abb7f95d] p-2.5"
+              : "p-2.5"
+          }
+        >
           <li>Home</li>
         </NavLink>
-        <NavLink to="/about">
+        <NavLink to="/about"    className={({ isActive, isPending }) =>
+            isPending
+              ? "pending p-2.5"
+              : isActive
+              ? "bg-[#abb7f95d] p-2.5"
+              : "p-2.5"
+          }>
           <li>About Us</li>
         </NavLink>
-        <NavLink to="/services">
+        <NavLink to="/services"    className={({ isActive, isPending }) =>
+            isPending
+              ? "pending p-2.5"
+              : isActive
+              ? "bg-[#abb7f95d] p-2.5"
+              : "p-2.5"
+          }>
           <li>Services</li>
         </NavLink>
       </ul>

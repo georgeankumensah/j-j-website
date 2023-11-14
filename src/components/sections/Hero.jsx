@@ -8,7 +8,7 @@ const Hero = () => {
         <h1 className="hero-text-gradient font-extrabold">
           Welcome to <br /> J&Y Cleaning Services
         </h1>
-        <h3 className="text-[#1E1E1E] text-lg not-italic font-normal leading-[normal]">
+        <h3 className="text-[#1E1E1E] text-lg default-font not-italic font-normal leading-[normal]">
           Your Trusted Cleaning and Maintenance Experts <br /> in Melbourne's
           Western Suburbs
         </h3>

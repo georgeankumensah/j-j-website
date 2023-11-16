@@ -10,7 +10,7 @@ import Testimonials from "../components/sections/Testimonials";
 
 const Homepage = () => {
   return (
-    <div className="relative h-full container lg:max-w-screen-2xl background mx-auto lg:px-[9.38rem] overflow-clip">
+    <div className="relative h-full container lg:max-w-screen-2xl background mx-auto  overflow-clip">
       <Hero />
       <About />
       <Services />

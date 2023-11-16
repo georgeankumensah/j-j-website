@@ -3,7 +3,7 @@ import heroImage from "../../assets/heroImage.png";
 
 const Hero = () => {
   return (
-    <div className="flex items-center  px-[8.75rem]">
+    <div className="flex items-center  px-[8.75rem] h-scree">
       <div className="flex flex-col gap-[1.25rem]">
         <h1 className="hero-text-gradient font-extrabold">
           Welcome to <br /> J&Y Cleaning Services
@@ -20,7 +20,7 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="cleaner"
-          className="rounded-[1.875rem] default-font p-2.5  w-[32.625rem] h-[30.1875rem] shrink-0"
+          className="rounded-[1.875rem] default-font p-2.5 aspect-auto w-[32.625rem] h-[30.1875rem] shrink-0"
         />
         <p className="absolute bottom-[2.13rem] bg-white text-[#1E1E1E] w-48 h-[4.125rem] px-[1.875rem] py-5 shadow-lg  rounded-[1.875rem]">Your Best Cleaners</p>
       </div>

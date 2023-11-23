@@ -9,8 +9,8 @@ const HeroAbout = () => {
           About Our Professional <br /> cleaning Service
         </h1>
         <h3 className="text-[#1E1E1E] text-lg default-font not-italic font-normal leading-[normal]">
-          Your Trusted Cleaning and Maintenance Experts <br /> in Melbourne's Western
-          Suburbs
+          Your Trusted Cleaning and Maintenance Experts <br /> in Melbourne's
+          Western Suburbs
         </h3>
         <button className="rounded-[1.875rem] default-font bg-[#3956f0] text-white p-2.5 w-[10.25rem]">
           Talk to us

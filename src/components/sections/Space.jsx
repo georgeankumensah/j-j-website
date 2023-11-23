@@ -22,7 +22,7 @@ const Space = () => {
       <img
         src={spaceImage}
         alt="two guys cleaning"
-        className=" w-[40rem] h-[39.375rem] shrink-0 aspect-auto"
+        className=" w-[40rem] h-[39.375rem] shrink-0 aspect-video "
       />
     </div>
   );

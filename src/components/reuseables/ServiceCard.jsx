@@ -6,7 +6,7 @@ const ServiceCard = ({item}) => {
       <img
         src={item.image}
         alt={item.name}
-        className="w-[19.12756rem] h-[19.12756rem] shrink-0  shadow-[0px_4px_60px_0px_rgba(0,0,0,0.10)] aspect-auto rounded-[19.12756rem] border-[4.936px] border-solid border-white"
+        className="w-[19.12756rem] shrink-0  shadow-[0px_4px_60px_0px_rgba(0,0,0,0.10)] aspect-square rounded-[19.12756rem] border-[4.936px] border-solid border-white"
       />
       <div className="flex items-center   absolute top-[11.29rem] left-[6.56rem] bg-white w-[12.77231rem] h-[10.61275rem] rounded-[6.17019rem_0rem_6.50956rem_1.60425rem] border-[4.936px] border-solid border-[#EAE8E8]">
         <div className="flex flex-col gap-[0.68rem] ml-[2.16rem]">

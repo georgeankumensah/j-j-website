@@ -3,7 +3,7 @@ import aboutImage from "../../assets/about-section.png";
 
 const About = () => {
   return (
-    <div className="flex items-center justify-between gap-[7.44rem] px-[8.75rem] mt-[15.6rem]">
+    <div className="flex items-center justify-between gap-[7.44rem]  mt-[15.6rem]">
       <img
         src={aboutImage}
         alt="workers cleaning"

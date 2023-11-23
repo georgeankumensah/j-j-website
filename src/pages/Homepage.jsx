@@ -12,7 +12,9 @@ const Homepage = () => {
   return (
     <div className="relative h-full container lg:max-w-screen-2xl background mx-auto  overflow-clip">
       <Hero />
-      <About />
+      <section className="px-[8.75rem]">
+        <About />
+      </section>
       <Services />
       <Why />
       <Task />

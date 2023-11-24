@@ -13,16 +13,18 @@ const Contact = () => {
           Request a Free Estimate
         </button>
         <div className="flex flex-col items-end">
-          <p className="text-white text-4xl not-italic font-bold leading-[normal] default-font capitalize">
-            <span>or Call </span> +(61 )466 897 856
+          <p className="text-white text-[1.5rem] not-italic font-bold leading-[normal] default-font capitalize">
+            <span className="font-normal">or Call </span> +(61 )466 897 856
           </p>
-          <p>+(61) 450 544 573</p>
+          <p className="text-white text-[1.5rem] not-italic font-bold leading-[normal] default-font capitalize">
+            +(61) 450 544 573
+          </p>
         </div>
       </div>
       <img
         src={contactImage}
         alt="contact image"
-        className="w-[ 28.125rem] h-[36.79288rem] shrink-0 absolute z-20 bottom-0 right-[8.75rem]"
+        className="w-[ 28.125rem] h-[36.79288rem] shrink-0 absolute z-20 bottom-0 right-[5.75rem]"
       />
     </div>
   );

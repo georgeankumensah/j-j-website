@@ -11,16 +11,30 @@ import Testimonials from "../components/sections/Testimonials";
 const Homepage = () => {
   return (
     <div className="relative h-full container lg:max-w-screen-2xl background mx-auto  overflow-clip">
-      <Hero />
+      <section>
+        <Hero />
+      </section>
       <section className="px-[8.75rem]">
         <About />
       </section>
-      <Services />
-      <Why />
-      <Task />
-      <Connect />
-      <Space />
-      <Testimonials />
+      <section>
+        <Services />
+      </section>
+      <section>
+        <Why />
+      </section>
+      <section>
+        <Task />
+      </section>
+      <section>
+        <Connect />
+      </section>
+      <section>
+        <Space />
+      </section>
+      <section>
+        <Testimonials />
+      </section>
     </div>
   );
 };

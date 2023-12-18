@@ -7,10 +7,12 @@ import Contact from "../components/sections/Contact";
 const AboutPage = () => {
   return (
     <div className="relative h-full container lg:max-w-screen-2xl background mx-auto  overflow-clip">
-      <HeroAbout />
-      <Mission />
-      <About />
-      <Contact />
+
+        <HeroAbout />
+        <Mission />
+        <About />
+  
+        <Contact />
     </div>
   );
 };

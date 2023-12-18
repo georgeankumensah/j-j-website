@@ -31,7 +31,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="flex items-center  px-[8.75rem] h-scree">
+    <div className="flex items-center  px-[8.75rem] ">
       <motion.div
         variants={textVariants}
         initial="initial"

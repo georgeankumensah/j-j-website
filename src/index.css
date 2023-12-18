@@ -1,31 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html{
-    scroll-snap-type:y mandatory;
-    scroll-behavior: smooth;
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
-section{
-    scroll-snap-align: center;
+section {
+  scroll-snap-align: center;
+}
 
+.default-font {
+  font-family: "Montserrat", sans-serif;
 }
-
-.default-font{
-    font-family: 'Montserrat', sans-serif;
+.hero-text-gradient {
+  background: linear-gradient(264deg, #800080 28.61%, #3956f0 78.72%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Montserrat";
+  font-size: 2.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.hero-text-gradient{
-    background: linear-gradient(264deg, #800080 28.61%, #3956F0 78.72%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-family: "Montserrat";
-font-size: 2.875rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.about-text-gradient {
+  background: linear-gradient(
+    264deg,
+    rgb(211, 211, 211) 28.61%,
+    #3956f0 78.72%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Montserrat";
+  font-size: 2.875rem;
+  font-style: normal;
+  font-weight: 700;
 }
-.test{
-    border: 2px solid red;
+.test {
+  border: 2px solid red;
 }

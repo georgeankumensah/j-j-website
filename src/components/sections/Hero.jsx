@@ -65,9 +65,9 @@ const Hero = () => {
           initial="imageScaleInitial"
           animate="imageScalefinal"
           alt="cleaner"
-          className="rounded-[1.875rem] default-font p-2.5 aspect-auto w-[32.625rem] h-[30.1875rem] shrink-0"
+          className="rounded-[1.875rem] default-font p-2.5 aspect-auto w-[32.625rem] h-[30.1875rem] object-cover shrink-0"
         />
-        <p className="absolute bottom-[2.13rem] bg-white text-[#1E1E1E] w-48 h-[4.125rem] px-[1.875rem] py-5 shadow-lg  rounded-[1.875rem]">
+        <p className="absolute bottom-[2.13rem] bg-white text-[#1E1E1E]  h-[4.125rem] px-[1.875rem] py-5 shadow-lg  rounded-[1.875rem]">
           Your Best Cleaners
         </p>
       </div>

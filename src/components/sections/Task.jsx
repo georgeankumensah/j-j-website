@@ -20,7 +20,7 @@ const Task = () => {
       <img
         src={taskImage}
         alt="two guys cleaning"
-        className="w-[47.625rem] h-[38.875rem] shrink-0 aspect-auto"
+        className="w-[47.625rem] h-[38.875rem] shrink-0 aspect-auto object-cover"
       />
       <div className="relative flex flex-1 ">
         <motion.p

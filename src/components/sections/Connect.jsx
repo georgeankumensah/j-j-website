@@ -32,14 +32,17 @@ const Connect = () => {
   };
   return (
     <div className="flex items-center justify-between gap-[7.44rem] px-[8.75rem] py-[5.69rem]">
-      <motion.img
-        variants={textVariants}
-        initial="imageScaleInitial"
-        animate="imageScalefinal"
-        src={aboutImage}
-        alt="workers cleaning"
-        className=" w-[24.625rem] h-[32rem] shrink-0"
-      />
+   <motion.div variants={textVariants}
+        whileInView="imageScalefinal"
+        // animate="imageScalefinal"
+        initial="imageScaleInitial" className="relative w-[24.625rem] h-[32rem] shrink-0">
+        <img
+          src="/cleaner.png"
+          alt="cleaner"
+          className="w-[23.0625rem] h-[30.875rem] shrink-0 object-cover rounded-[0rem_11.53125rem_0rem_11.53125rem] relative border-[5px] border-solid border-white z-10"
+        />
+        <div className="bg-[#3956F0] w-[11.5625rem] aspect-square rounded-full absolute bottom-[20.44rem] left-[13.0625rem] z-0"></div>
+      </motion.div>
       <motion.div
         variants={textVariants}
         initial="initial"

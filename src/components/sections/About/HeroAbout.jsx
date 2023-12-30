@@ -1,9 +1,8 @@
-import React from "react";
 import aboutHeroImage from "../../../assets/aboutHeroImage.png";
 
 const HeroAbout = () => {
   return (
-    <div className="flex items-start justify-start  mt-[6.37rem] px-[8.75rem] relative h-screen ">
+    <div className="flex items-start justify-start  pt-[10.37rem] px-[8.75rem] relative h-screen  overflow-clip">
       <div className="flex flex-col gap-[1.25rem] w-full z-10  ">
         <h1 className="hero-text-gradient font-extrabold">
           About Our Professional <br /> cleaning Service

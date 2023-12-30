@@ -40,8 +40,8 @@ const MissionCard = ({ item }) => {
 const Mission = () => {
   return (
     <div className="bg-[#E3E7FD] w-full flex p-[8.25rem] gap-[9.69rem]">
-      {data.map((item) => (
-        <MissionCard item={item} />
+      {data.map((item,index) => (
+        <MissionCard key={index} item={item} />
       ))}
     </div>
   );

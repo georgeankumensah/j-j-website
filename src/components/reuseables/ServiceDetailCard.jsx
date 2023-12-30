@@ -1,12 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useScroll } from "framer-motion";
 import aboutImage from "../../assets/about-section.png";
+
 
 const ServiceDetailCard = ({ item }) => {
   const { title, description, image, id } = item;
   const textVariants = {
     initial: {
-      x: 500,
+      x: 300,
       opacity: 0,
     },
     animate: {
@@ -14,13 +16,12 @@ const ServiceDetailCard = ({ item }) => {
       opacity: 1,
       transition: {
         duration: 1,
-        staggerChildren: 0.2,
       },
     },
     imageScaleInitial: {
       opacity: 0,
       scale: 0.4,
-      y: -300,
+      y: -50,
     },
     imageScalefinal: {
       opacity: 1,
@@ -33,9 +34,9 @@ const ServiceDetailCard = ({ item }) => {
   };
   return (
     <div
-      className="flex  items-center justify-between gap-[7.44rem]  "
+      className="flex h-screen  items-center justify-between gap-[7.44rem]  "
       style={{ flexDirection: id%2 == 0 ? "row-reverse" : "row" }}
-    >
+    > 
       <motion.div
         variants={textVariants}
         whileInView="imageScalefinal"

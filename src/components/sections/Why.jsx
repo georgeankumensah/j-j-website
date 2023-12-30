@@ -60,7 +60,6 @@ const Why = () => {
       scale: 1,
       y: 0,
       transition: {
-        delay: 1,
         duration: 1,
         staggerChildren: 0.4,
 
@@ -85,8 +84,8 @@ const Why = () => {
           initial="initial"
           className="grid grid-cols-2 gap-[1.25rem] mt-[2.19rem]"
         >
-          {cardData.map((item) => (
-            <motion.li variants={textVariants}>
+          {cardData.map((item,index) => (
+            <motion.li key={index} variants={textVariants}>
               <AboutCard item={item} key={item.id} />
             </motion.li>
           ))}
@@ -94,7 +93,7 @@ const Why = () => {
         <div className="relative">
           <img src={aboutImage} alt="woman holding detergent" />
           <span className="absolute bottom-0 right-[-1rem] text-center bg-white font-bold text-[#1E1E1E] w-[15.5625rem] h-[3.375rem] px-[1.875rem] flex items-center justify-center shadow-lg  rounded-[0.625rem] ">
-            You Best Choices
+            Your Best Choices
           </span>
         </div>
       </div>

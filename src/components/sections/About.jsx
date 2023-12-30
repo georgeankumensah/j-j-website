@@ -32,11 +32,10 @@ const About = () => {
   };
 
   return (
-    <div className="flex items-center justify-between gap-[7.44rem]  mt-[15.6rem]">
+    <div className="flex items-center justify-between gap-[7.44rem]  mt-[15.6rem] ">
 
        <motion.div variants={textVariants}
         whileInView="imageScalefinal"
-        // animate="imageScalefinal"
         initial="imageScaleInitial" className="relative w-[24.625rem] h-[32rem] shrink-0">
         <img
           src="/cleaner.png"

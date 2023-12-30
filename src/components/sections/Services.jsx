@@ -93,7 +93,7 @@ const Services = () => {
       >
         {serviceData.map((service, i) => {
           return (
-            <motion.li custom={i} variants={textVariants}>
+            <motion.li custom={i} key={i} variants={textVariants}>
               <ServiceCard item={service} key={service.id} />
             </motion.li>
           );

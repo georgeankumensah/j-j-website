@@ -7,6 +7,10 @@ html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
+*{
+  font-family: "Montserrat", sans-serif;
+
+}
 section {
   scroll-snap-align: center;
 }

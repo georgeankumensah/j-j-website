@@ -31,8 +31,8 @@ const Testimonials = () => {
         Hear From Our Clients
       </h2>
       <div className="flex items-start justify-between">
-        {testimonials.map((item) => (
-          <TestimonialMessage item={item} />
+        {testimonials.map((item,index) => (
+          <TestimonialMessage key={index} item={item} />
         ))}
       </div>
     </div>

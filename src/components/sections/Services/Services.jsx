@@ -1,14 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion"
 import ServiceDetailCard from "../../reuseables/ServiceDetailCard";
 
-//images
-// import commercial from "../../assets/commercial.png";
-// import commercialVector from "../../assets/commercialVector.png";
-// import residential from "../../assets/residential.png";
-// import residentialVector from "../../assets/residentialVector.png";
-// import eol from "../../assets/eol.png";
-// import eolVector from "../../assets/eolVector.png";
 
 const Services = () => {
   const serviceData = [
@@ -72,7 +64,6 @@ const Services = () => {
       scale: 1,
       y: 0,
       transition: {
-        delay: 1,
         duration: 1,
         staggerChildren: 0.4,
 
@@ -82,7 +73,7 @@ const Services = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-between  px-[8.75rem] mt-[15.6rem]">
+    <div className="flex flex-col items-center justify-between py-[3.75rem]  px-[8.75rem] ">
       <div className="flex flex-col items-center">
         <h1 className="text-[#3956F0] text-4xl not-italic font-medium leading-[normal] default-font">
           Services
@@ -96,12 +87,12 @@ const Services = () => {
       </div>
       <motion.ul
         variants={textVariants}
-        initial="imageScaleInitial"
-        whileInView="imageScalefinal"
+        // initial="imageScaleInitial"
+        // whileInView="imageScalefinal"
         className="my-[3.31rem] flex flex-col gap-[2.81rem]"
       >
         {serviceData.map((item, index) => (
-          <li>
+          <li key={index}>
             <ServiceDetailCard item={item} />
           </li>
         ))}

@@ -1,10 +1,12 @@
-import React from "react";
 import logo from "../../assets/logo.png";
 import { NavLink, Link } from "react-router-dom";
+import { GrMenu } from "react-icons/gr";
 
 const Navbar = () => {
   return (
-    <div className="flex  justify-between items-center px-[8.75rem] py-[1.38rem]  z-[100]">
+    <>
+    
+    <div className="hidden lg:flex  justify-between items-center px-[8.75rem] py-[1.38rem] absolute w-full bg-white  z-[100]">
       <Link to="/">
         <img src={logo} alt="logo" />
       </Link>
@@ -46,6 +48,14 @@ const Navbar = () => {
         Contact Us
       </button>
     </div>
+    {/* mobile navbar */}
+    <div className="flex  items-center justify-between lg:hidden bg-white h-[82px] absolute z-[100] top-0 w-full p-[1.89rem]">
+    <Link to="/">
+        <img src={logo} alt="logo" className="w-[2.375rem] h-[2.6875rem]" />
+      </Link>
+    <GrMenu className="w-[2.239rem] h-[2.625rem]" />
+    </div>
+    </>
   );
 };
 

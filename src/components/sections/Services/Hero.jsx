@@ -10,8 +10,8 @@ const Hero = () => {
     { title: "First item", description: "Lorem ipsum", img: "/hero3.png" },
   ];
   return (
-    <div className="relative">
-      <div className="relative z-0 ">
+    <div className="   bg-red-400">
+      <div className=" relative  ">
         <Carousel
           showThumbs={false}
           showStatus={false}
@@ -25,15 +25,16 @@ const Hero = () => {
         >
           {slides.map((slide, index) => (
             <img
+            key={index}
               src={slide.img}
               alt="banner"
-              className="h-full w-full object-cover"
+              className=" w-full h-full object-cover"
             />
           ))}
         </Carousel>
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
-      <div className="absolute z-50 top-[15.94rem] left-[8.75rem] flex flex-col gap-[1.25rem]">
+      <div className="absolute z-[40] top-[15.94rem] left-[8.75rem] flex flex-col gap-[1.25rem]">
         <h1 className="about-text-gradient">
           Checking Our Professional <br />
           cleaning Service we Render

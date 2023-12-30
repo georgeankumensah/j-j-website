@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 import heroImage from "../../assets/heroImage.png";
@@ -31,16 +30,16 @@ const Hero = () => {
   };
 
   return (
-    <div className="flex items-center  px-[8.75rem] ">
+    <div className="flex flex-col lg:flex-row items-center h-screen px-[1.89rem]  lg:px-[8.75rem] ">
       <motion.div
         variants={textVariants}
         initial="initial"
         animate="animate"
-        className="flex flex-col gap-[1.25rem]"
+        className="flex flex-col gap-[1.25rem] mt-[6.37rem] lg:mt-0"
       >
         <motion.h1
           variants={textVariants}
-          className="hero-text-gradient font-extrabold"
+          className="hero-text-gradient    font-extrabold"
         >
           Welcome to <br /> J&Y Cleaning Services
         </motion.h1>

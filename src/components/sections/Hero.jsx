@@ -30,7 +30,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center h-screen px-[1.89rem]  lg:px-[8.75rem] ">
+    <div className="flex flex-col   lg:flex-row items-center  lg:h-screen   px-[1.9rem]  lg:px-[8.75rem] ">
       <motion.div
         variants={textVariants}
         initial="initial"
@@ -64,7 +64,7 @@ const Hero = () => {
           initial="imageScaleInitial"
           animate="imageScalefinal"
           alt="cleaner"
-          className="rounded-[1.875rem] default-font p-2.5 aspect-auto w-[32.625rem] h-[30.1875rem] object-cover shrink-0"
+          className="rounded-[1.875rem] default-font p-2.5 aspect-auto   w-[32.625rem] h-[30.1875rem] object-scale-down shrink-1"
         />
         <p className="absolute bottom-[2.13rem] bg-white text-[#1E1E1E]  h-[4.125rem] px-[1.875rem] py-5 shadow-lg  rounded-[1.875rem]">
           Your Best Cleaners

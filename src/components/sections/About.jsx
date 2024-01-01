@@ -5,7 +5,7 @@ import aboutImage from "../../assets/about-section.png";
 const About = () => {
   const textVariants = {
     initial: {
-      x: 500,
+      x: 300,
       opacity: 0,
     },
     animate: {
@@ -32,11 +32,11 @@ const About = () => {
   };
 
   return (
-    <div className="flex items-center justify-between gap-[7.44rem]  mt-[15.6rem] ">
+    <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-[7.44rem] mt-[7rem] lg:mt-[15.6rem] ">
 
        <motion.div variants={textVariants}
         whileInView="imageScalefinal"
-        initial="imageScaleInitial" className="relative w-[24.625rem] h-[32rem] shrink-0">
+        initial="imageScaleInitial" className="relative w-[24.625rem] h-[32rem] px-[1.89rem] lg:px-0 shrink-0">
         <img
           src="/cleaner.png"
           alt="cleaner"
@@ -68,7 +68,7 @@ const About = () => {
         >
           At J&Y Cleaning Services, we are dedicated to creating pristine
           environments for both
-          <span>
+          <span>{" "}
             NDIS participants and the broader Melbourne community. With a
             remarkable 38 years of combined experience in cleaning and over two
             decades{" "}

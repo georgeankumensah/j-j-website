@@ -15,6 +15,13 @@ section {
   scroll-snap-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  section {
+    scroll-snap-align: initial;
+  /* background-color: lightblue; */
+  }
+  }
+
 .default-font {
   font-family: "Montserrat", sans-serif;
 }

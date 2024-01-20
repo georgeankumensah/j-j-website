@@ -5,9 +5,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Hero = () => {
   const slides = [
-    { title: "First item", description: "Lorem ipsum", img: "/hero1.png" },
-    { title: "First item", description: "Lorem ipsum", img: "/hero2.png" },
-    { title: "First item", description: "Lorem ipsum", img: "/hero3.png" },
+    { title: "First item", description: "Lorem ipsum", img: "/assets/hero1.png" },
+    { title: "First item", description: "Lorem ipsum", img: "/assets/hero2.png" },
+    { title: "First item", description: "Lorem ipsum", img: "/assets/hero3.png" },
   ];
   return (
     <div className="   bg-red-400">

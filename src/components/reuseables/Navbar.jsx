@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <>
     
-    <div className="hidden lg:flex  justify-between items-center px-[8.75rem] py-[1.38rem] absolute w-full bg-white  z-[100]">
+    <div className="hidden lg:flex  justify-between items-center px-[8.75rem] py-[1.38rem] sticky top-0 w-full bg-white  z-[100]">
       <Link to="/">
         <img src={logo} alt="logo" />
       </Link>

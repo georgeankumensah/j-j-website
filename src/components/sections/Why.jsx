@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import aboutImage from "../../assets/aboutImage.png";
 import AboutCard from "../reuseables/AboutCard";
@@ -69,7 +68,7 @@ const Why = () => {
   };
 
   return (
-    <div className="  bg-[#abb7f95d]  py-[4.94rem] px-[6.75rem] my-[7.6rem] ">
+    <div className="  bg-[#abb7f95d]  py-[4.94rem] px-[2.675rem] md:px-[6.75rem] my-[7.6rem] ">
       <h1 className="font-bold leading-[normal] text-[#3956F0] default-font text-4xl not-italic  default-font">
         Why Choose
         <span className="text-[#800080]">
@@ -82,15 +81,15 @@ const Why = () => {
           variants={textVariants}
           whileInView="animate"
           initial="initial"
-          className="grid grid-cols-2 gap-[1.25rem] mt-[2.19rem]"
+          className="grid lg:grid-cols-2 gap-[1.25rem] mt-[2.19rem]"
         >
-          {cardData.map((item,index) => (
+          {cardData.map((item, index) => (
             <motion.li key={index} variants={textVariants}>
               <AboutCard item={item} key={item.id} />
             </motion.li>
           ))}
         </motion.ul>
-        <div className="relative">
+        <div className="relative hidden lg:block">
           <img src={aboutImage} alt="woman holding detergent" />
           <span className="absolute bottom-0 right-[-1rem] text-center bg-white font-bold text-[#1E1E1E] w-[15.5625rem] h-[3.375rem] px-[1.875rem] flex items-center justify-center shadow-lg  rounded-[0.625rem] ">
             Your Best Choices

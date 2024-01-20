@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import aboutHeroImage from "../../../assets/aboutHeroImage.png";
 
 const HeroAbout = () => {

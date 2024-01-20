@@ -1,4 +1,3 @@
-import React from "react";
 import TestimonialMessage from "../reuseables/TestimonialMessage";
 
 const Testimonials = () => {
@@ -26,12 +25,12 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="p-[6.5rem] flex flex-col gap-[6.25rem] bg-[#F7F5F5]">
+    <div className="p-[1.5rem] md:p-[6.5rem] flex flex-col gap-[6.25rem] bg-[#F7F5F5]">
       <h2 className=" text-[#800080] text-4xl text-center not-italic font-bold leading-[normal] default-font">
         Hear From Our Clients
       </h2>
-      <div className="flex items-start justify-between">
-        {testimonials.map((item,index) => (
+      <div className="flex flex-col lg:flex-row items-start justify-between">
+        {testimonials.map((item, index) => (
           <TestimonialMessage key={index} item={item} />
         ))}
       </div>

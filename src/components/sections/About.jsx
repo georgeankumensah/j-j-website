@@ -1,6 +1,4 @@
-import React from "react";
 import { motion } from "framer-motion";
-import aboutImage from "../../assets/about-section.png";
 
 const About = () => {
   const textVariants = {
@@ -33,12 +31,11 @@ const About = () => {
 
   return (
     <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-[7.44rem] mt-[7rem] lg:mt-[15.6rem] ">
-
        <motion.div variants={textVariants}
         whileInView="imageScalefinal"
         initial="imageScaleInitial" className="relative w-[24.625rem] h-[32rem] px-[1.89rem] lg:px-0 shrink-0">
         <img
-          src="/cleaner.png"
+          src="/assets/cleaner.png"
           alt="cleaner"
           className="w-[23.0625rem] h-[30.875rem] shrink-0 object-cover rounded-[0rem_11.53125rem_0rem_11.53125rem] relative border-[5px] border-solid border-white z-10"
         />

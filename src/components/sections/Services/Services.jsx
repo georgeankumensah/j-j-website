@@ -79,8 +79,9 @@ const Services = () => {
           Services
         </h1>
         <h2 className=" text-[#800080] text-center text-4xl not-italic font-bold leading-[normal] default-font">
-          Explore our <br /> range of services
+          Explore our <br/> range of services 
         </h2>
+       
         <p className=" text-[#3d3333] text-lg not-italic font-normal leading-7 default-font">
           Our All time 24/7 services
         </p>

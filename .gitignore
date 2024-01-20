@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Cpanel deploy
+.deploy.conf
+.deploy.sh
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

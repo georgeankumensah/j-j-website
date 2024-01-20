@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import ServiceCard from "../reuseables/ServiceCard";
 
@@ -55,7 +54,6 @@ const Services = () => {
       scale: 1,
       y: 0,
       transition: {
-        delay: 1,
         duration: 1,
         staggerChildren: 0.4,
 
@@ -74,13 +72,14 @@ const Services = () => {
         >
           Services
         </h1>
+    
         <h2
           className=" text-[#800080] text-center text-4xl not-italic font-bold leading-[normal] default-font"
         >
           Explore our <br /> range of services
         </h2>
         <p
-          className=" text-[#3d3333] text-lg not-italic font-normal leading-7 default-font"
+          className=" text-[#3d3333] text-center text-lg not-italic font-normal leading-7 default-font"
         >
           Our All time 24/7 services
         </p>
@@ -89,7 +88,7 @@ const Services = () => {
         variants={textVariants}
         initial="imageScaleInitial"
         whileInView="imageScalefinal"
-        className="my-[3.31rem] flex gap-[2.81rem]"
+        className="my-[3.31rem] flex flex-col lg:flex-row gap-[2.81rem]"
       >
         {serviceData.map((service, i) => {
           return (

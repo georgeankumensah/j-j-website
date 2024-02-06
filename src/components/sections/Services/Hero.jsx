@@ -28,7 +28,7 @@ const Hero = () => {
             key={index}
               src={slide.img}
               alt="banner"
-              className=" w-full h-screen lg:h-full object-cover"
+              className=" w-full h-screen  object-cover"
             />
           ))}
         </Carousel>

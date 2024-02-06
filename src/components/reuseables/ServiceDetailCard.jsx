@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { useScroll } from "framer-motion";
-import aboutImage from "../../assets/about-section.png";
 
 
 const ServiceDetailCard = ({ item }) => {

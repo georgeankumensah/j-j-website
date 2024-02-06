@@ -9,7 +9,7 @@ const Navbar = () => {
     
     <div className="hidden lg:flex  justify-between items-center px-[8.75rem] py-[1.38rem] sticky top-0 w-full bg-white  z-[100]">
       <Link to="/">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className="h-[70px]" />
       </Link>
       <ul
         className="flex items-center @apply text-[#1E1E1E] gap-[2.56rem] text-lg not-italic font-normal leading-[normal] default-font"

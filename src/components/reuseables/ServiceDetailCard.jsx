@@ -34,7 +34,7 @@ const ServiceDetailCard = ({ item }) => {
   };
   return (
     <div
-      className="flex lg:h-screen !flex-col lg:flex-row  items-center justify-between gap-[7.44rem]  "
+      className="flex lg:h-screen flex-col lg:flex-row  items-center justify-between gap-[7.44rem]  "
       style={{ flexDirection: id%2 == 0 ? "row-reverse" : "row" }}
     > 
       <motion.div

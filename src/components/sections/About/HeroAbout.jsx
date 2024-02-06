@@ -3,7 +3,7 @@ import aboutHeroImage from "../../../assets/aboutHeroImage.png";
 
 const HeroAbout = () => {
   return (
-    <div className="flex items-start justify-start  pt-[10.37rem] px-[8.75rem] relative h-screen  overflow-clip">
+    <div className="flex items-start justify-start flex-col lg:flex-row pt-[10.37rem]  px-[1.9rem]  lg:px-[8.75rem] relative h-screen  overflow-clip">
       <div className="flex flex-col gap-[1.25rem] w-full z-10  ">
         <h1 className="hero-text-gradient font-extrabold">
           About Our Professional <br /> cleaning Service
@@ -19,7 +19,7 @@ const HeroAbout = () => {
       <img
         src={aboutHeroImage}
         alt="cleaner"
-        className="w-[48.6875rem]  absolute z-0  right-0 aspect-auto "
+        className="w-[48.6875rem]  lg:absolute z-0  right-0 aspect-auto "
       />
     </div>
   );

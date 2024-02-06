@@ -1,6 +1,5 @@
 import React from "react";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
-import { Link } from "react-router-dom";
 import { GrMenu } from "react-icons/gr";
 import { GrClose } from "react-icons/gr";
 
@@ -32,7 +31,6 @@ const sideVariants = {
 };
 export default function Sidebar() {
   const [open, cycleOpen] = useCycle(false, true);
-  const sidebarDiv = document.getElementById("sidebar")
 
   return (
     <main>

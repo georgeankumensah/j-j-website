@@ -2,7 +2,6 @@ import logo from "../../assets/logo.png";
 import { NavLink, Link } from "react-router-dom";
 
 import Sidebar from "./Sidebar";
-import { createPortal } from "react-dom";
 
 const Navbar = () => {
   return (

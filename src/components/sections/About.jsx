@@ -57,7 +57,7 @@ const About = () => {
           variants={textVariants}
           className=" text-[#800080] text-4xl not-italic font-bold leading-[normal] default-font"
         >
-          Did you know we have 38 years experience
+          Did you know our Boss have 38 years experience
         </motion.h2>
         <motion.p
           variants={textVariants}

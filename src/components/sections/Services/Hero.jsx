@@ -10,7 +10,7 @@ const Hero = () => {
     { title: "First item", description: "Lorem ipsum", img: "/assets/hero3.png" },
   ];
   return (
-    <div className="   bg-red-400">
+    <div className=" w-full h-screen lg:h-full   bg-red-400">
       <div className=" relative  ">
         <Carousel
           showThumbs={false}
@@ -28,18 +28,18 @@ const Hero = () => {
             key={index}
               src={slide.img}
               alt="banner"
-              className=" w-full h-full object-cover"
+              className=" w-full h-screen lg:h-full object-cover"
             />
           ))}
         </Carousel>
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
-      <div className="absolute z-[40] top-[15.94rem] left-[8.75rem] flex flex-col gap-[1.25rem]">
-        <h1 className="about-text-gradient">
+      <div className="absolute z-[40] top-[8rem] md:top-[15.94rem] left-[2rem] md:left-[4rem] lg:left-[8.75rem] flex flex-col gap-[1.25rem]">
+        <h1 className="about-text-gradient ">
           Checking Our Professional <br />
           cleaning Service we Render
         </h1>
-        <h3 className="text-white text-lg default-font not-italic font-normal leading-[normal]">
+        <h3 className="text-white text-lg default-font not-italic font-normal leading-[1rem] md:leading-[normal]">
           Your Trusted Cleaning and Maintenance Experts in Melbourne's Western
           Suburbs
         </h3>

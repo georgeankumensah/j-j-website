@@ -4,7 +4,7 @@ import { GrMenu } from "react-icons/gr";
 import { GrClose } from "react-icons/gr";
 
 const links = [
-  { name: "Home", to: "/a", id: 1 },
+  { name: "Home", to: "/", id: 1 },
   { name: "About", to: "/about", id: 2 },
   { name: "Services", to: "/services", id: 3 },
   { name: "Contact", to: "#", id: 4 }

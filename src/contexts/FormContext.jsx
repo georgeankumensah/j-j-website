@@ -12,7 +12,7 @@ export function useFormContext(){
 
 
 export default function FormContextProvider({ children }){
-    const [formIsActive,setFormIsActive] = useState(true)
+    const [formIsActive,setFormIsActive] = useState(false)
 
     const toggleForm  = (v) =>{
     setFormIsActive(v)

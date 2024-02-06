@@ -1,6 +1,8 @@
 import logo from "../../assets/logo.png";
 import { NavLink, Link } from "react-router-dom";
-import { GrMenu } from "react-icons/gr";
+
+import Sidebar from "./Sidebar";
+import { createPortal } from "react-dom";
 
 const Navbar = () => {
   return (
@@ -53,7 +55,7 @@ const Navbar = () => {
     <Link to="/">
         <img src={logo} alt="logo" className="w-[2.375rem] h-[2.6875rem]" />
       </Link>
-    <GrMenu className="w-[2.239rem] h-[2.625rem]" />
+    <Sidebar/>
     </div>
     </>
   );

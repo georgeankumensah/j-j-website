@@ -1,61 +1,67 @@
 import logo from "../../assets/logo.png";
 import { NavLink, Link } from "react-router-dom";
+import { useFormContext } from "../../contexts/FormContext";
 
 import Sidebar from "./Sidebar";
 
 const Navbar = () => {
+  const { formIsActive, toggleForm } = useFormContext();
+  const handleContactUs = () => {
+    toggleForm(true)
+  }
+
   return (
     <>
-    
-    <div className="hidden lg:flex  justify-between items-center px-[8.75rem] py-[1.38rem] sticky top-0 w-full bg-white  z-[100]">
-      <Link to="/">
-        <img src={logo} alt="logo" className="h-[70px]" />
-      </Link>
-      <ul
-        className="flex items-center @apply text-[#1E1E1E] gap-[2.56rem] text-lg not-italic font-normal leading-[normal] default-font"
-      >
-        <NavLink
-          to="/"
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending p-2.5"
-              : isActive
-              ? "bg-[#abb7f95d] p-2.5"
-              : "p-2.5"
-          }
+
+      <div className="hidden lg:flex  justify-between items-center px-[8.75rem] py-[1.38rem] sticky top-0 w-full bg-white  z-[130]">
+        <Link to="/">
+          <img src={logo} alt="logo" className="h-[70px]" />
+        </Link>
+        <ul
+          className="flex items-center @apply text-[#1E1E1E] gap-[2.56rem] text-lg not-italic font-normal leading-[normal] default-font"
         >
-          <li>Home</li>
-        </NavLink>
-        <NavLink to="/about"    className={({ isActive, isPending }) =>
+          <NavLink
+            to="/"
+            className={({ isActive, isPending }) =>
+              isPending
+                ? "pending p-2.5"
+                : isActive
+                  ? "bg-[#abb7f95d] p-2.5"
+                  : "p-2.5"
+            }
+          >
+            <li>Home</li>
+          </NavLink>
+          <NavLink to="/about" className={({ isActive, isPending }) =>
             isPending
               ? "pending p-2.5"
               : isActive
-              ? "bg-[#abb7f95d] p-2.5"
-              : "p-2.5"
+                ? "bg-[#abb7f95d] p-2.5"
+                : "p-2.5"
           }>
-          <li>About Us</li>
-        </NavLink>
-        <NavLink to="/services"    className={({ isActive, isPending }) =>
+            <li>About Us</li>
+          </NavLink>
+          <NavLink to="/services" className={({ isActive, isPending }) =>
             isPending
               ? "pending p-2.5"
               : isActive
-              ? "bg-[#abb7f95d] p-2.5"
-              : "p-2.5"
+                ? "bg-[#abb7f95d] p-2.5"
+                : "p-2.5"
           }>
-          <li>Services</li>
-        </NavLink>
-      </ul>
-      <button className="rounded-[1.875rem] default-font bg-[#3956f0] text-white p-2.5 w-[8.75rem]">
-        Contact Us
-      </button>
-    </div>
-    {/* mobile navbar */}
-    <div className="flex  items-center justify-between lg:hidden bg-white h-[82px] absolute z-[100] top-0 w-full p-[1.89rem]">
-    <Link to="/">
-        <img src={logo} alt="logo" className="w-[2.375rem] h-[2.6875rem]" />
-      </Link>
-    <Sidebar/>
-    </div>
+            <li>Services</li>
+          </NavLink>
+        </ul>
+        <button onClick={handleContactUs} className="rounded-[1.875rem] default-font bg-[#3956f0] text-white p-2.5 w-[8.75rem]">
+          Contact Us
+        </button>
+      </div>
+      {/* mobile navbar */}
+      <div className="flex  items-center justify-between lg:hidden bg-white h-[82px] absolute z-[100] top-0 w-full p-[1.89rem]">
+        <Link to="/">
+          <img src={logo} alt="logo" className="w-[2.375rem] h-[2.6875rem]" />
+        </Link>
+        <Sidebar />
+      </div>
     </>
   );
 };

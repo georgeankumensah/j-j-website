@@ -2,6 +2,7 @@
 // import "react-animated-slider/build/horizontal.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { useFormContext } from "../../../contexts/FormContext";
 
 const Hero = () => {
   const slides = [
@@ -9,6 +10,13 @@ const Hero = () => {
     { title: "First item", description: "Lorem ipsum", img: "/assets/hero2.png" },
     { title: "First item", description: "Lorem ipsum", img: "/assets/hero3.png" },
   ];
+  const { formIsActive, toggleForm } = useFormContext();
+
+
+  const handleClick = ()=>{
+    toggleForm(true)
+  }
+
   return (
     <div className=" w-full h-screen lg:h-full   bg-red-400">
       <div className=" relative  ">
@@ -43,7 +51,7 @@ const Hero = () => {
           Your Trusted Cleaning and Maintenance Experts in Melbourne's Western
           Suburbs
         </h3>
-        <button className="rounded-[1.875rem] default-font bg-[#3956f0] text-white p-2.5 w-[10.25rem]">
+        <button onClick={handleClick} className="rounded-[1.875rem] default-font bg-[#3956f0] text-white p-2.5 w-[10.25rem]">
           Talk to us
         </button>
       </div>

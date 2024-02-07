@@ -10,11 +10,21 @@ import logo from "../../assets/logo.png";
 const MessageForm = () => {
   const currentYear = new Date().getFullYear();
 
+  const {formIsActive,toggleForm,serviceType} = useFormContext();
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
+    service:serviceType,
     message: ''
   });
+
+  const serviceTypes =[
+"Commercial Cleaning",
+"Residential Cleaning",
+"End-of-Lease Cleaning",
+"Carpet Cleaning",
+"General Household Maintenance"
+  ]
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,8 +35,7 @@ const MessageForm = () => {
   };
 
 
-  const {formIsActive,toggleForm} = useFormContext();
-    console.log(formIsActive);
+    
 
 const handleSubmit =() =>{
     
@@ -88,6 +97,17 @@ Melbourne, Victoria 3338</b></p>
 
         />
       </div>
+      <select
+            name="service"
+            required
+            value={formData.service}
+            onChange={handleChange}
+            className="h-10 w-full border-r-8 border-transparent outline outline-1 my-3 pl-2 text-sm font-normal leading-6  rounded-md outline-[color:var(--Gray-300,#D0D5DD)] shadow-[0px_1px_2px_0px_rgba(16,24,40,0.05)] outline-solid"
+          >
+            {serviceTypes.map((role, index) => (
+              <option key={index} value={role}>{role}</option>
+            ))}
+          </select>
       <div className='flex flex-col gap-2 mb-4' >
         <label htmlFor="message">Message</label>
         <textarea

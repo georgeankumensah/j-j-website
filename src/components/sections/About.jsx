@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 const About = () => {
+
+  let location = useLocation()
+
+
   const textVariants = {
     initial: {
       x: 300,
@@ -73,12 +78,14 @@ const About = () => {
           in support work, our founders, Jeff and Yassah, bring a wealth of
           expertise and a compassionate understanding to every job.
         </motion.p>
+        {
+          location.pathname !== "/about" && 
         <motion.button
           variants={textVariants}
           className=" mt-[2rem] rounded-[1.875rem] default-font bg-[#3956f0] text-white p-2.5 w-[10.25rem]"
         >
           Learn More
-        </motion.button>
+              </motion.button>}
       </motion.div>
     </div>
   );

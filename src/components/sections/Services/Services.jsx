@@ -41,6 +41,7 @@ const Services = () => {
     },
   ];
 
+
   const textVariants = {
     initial: {
       y: 300,
@@ -98,7 +99,7 @@ const Services = () => {
           </li>
         ))}
       </motion.ul>
-      <motion.button className="rounded-[1.875rem] mt-[2.21rem]  default-font bg-[#3956f0] text-white p-2.5 w-[10.25rem]">
+      <motion.button  className="rounded-[1.875rem] mt-[2.21rem]  default-font bg-[#3956f0] text-white p-2.5 w-[10.25rem]">
         Explore More
       </motion.button>
       <div></div>

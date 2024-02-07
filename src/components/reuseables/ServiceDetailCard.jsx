@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useFormContext } from "../../contexts/FormContext";
 
 
 const ServiceDetailCard = ({ item }) => {
@@ -30,6 +31,16 @@ const ServiceDetailCard = ({ item }) => {
       },
     },
   };
+
+
+  const {setServiceType,toggleForm} = useFormContext()
+
+
+  const handleClick = () => {
+    // setServiceType(title)
+    toggleForm(true)
+  }
+
   return (
     <div
       className="flex lg:h-screen flex-col lg:flex-row  items-center justify-between gap-[7.44rem]  "
@@ -67,7 +78,7 @@ const ServiceDetailCard = ({ item }) => {
         >
           {description}
         </motion.p>
-        <motion.button
+        <motion.button onClick={handleClick}
           variants={textVariants}
           className=" mt-[2rem] rounded-[1.875rem] default-font bg-[#3956f0] text-white p-2.5 w-[10.25rem]"
         >

@@ -2,6 +2,10 @@ import React from "react";
 import contactImage from "../../assets/contact.png";
 
 const Contact = () => {
+
+  const handleCall = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
   return (
     <div className="flex justify-between bg-[#3956f0] gap-[1.75rem] lg:h-[28.3125rem] md:px-[8.75rem] py-[4.5rem]  px-[1.9rem]  lg:px-[8.75rem] mt-[8.25rem] relative ">
       <div className="flex flex-col items-start gap-[1.45rem]">
@@ -9,7 +13,7 @@ const Contact = () => {
           Let us help with your <br /> one-time cleaning and <br /> recurring
           cleaning services.
         </h1>
-        <button className="rounded-[1.875rem] default-font text-[#3956f0] text-[1.125rem] bg-white p-[0.625rem] md:w-[19.875rem]">
+        <button onClick={handleCall} className="rounded-[1.875rem] default-font text-[#3956f0] text-[1.125rem] bg-white p-[0.625rem] md:w-[19.875rem]">
           Request a Free Estimate
         </button>
         <div className="flex flex-col items-end">

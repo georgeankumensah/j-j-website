@@ -1,6 +1,15 @@
 import { motion } from "framer-motion";
+import { useFormContext } from "../../contexts/FormContext";
 
 const Connect = () => {
+
+  const { formIsActive, toggleForm } = useFormContext();
+
+  const handleClick = ()=>{
+    toggleForm(true)
+  }
+
+
   const textVariants = {
     initial: {
       x: 500,
@@ -62,7 +71,7 @@ const Connect = () => {
           Contact us today to discuss your needs and discover how we can make
           your life cleaner and more comfortable.
         </motion.p>
-        <motion.button
+        <motion.button onClick={handleClick}
           variants={textVariants}
           className=" mt-[2rem] rounded-[1.875rem] default-font bg-[#3956f0] text-white p-2.5 w-[10.25rem]"
         >

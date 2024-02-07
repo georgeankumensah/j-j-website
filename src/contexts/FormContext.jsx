@@ -12,14 +12,19 @@ export function useFormContext(){
 
 
 export default function FormContextProvider({ children }){
-    const [formIsActive,setFormIsActive] = useState(false)
+    const [formIsActive,setFormIsActive] = useState(false);
+    const [serviceType,setServiceType] = ("Commercial Cleaning");
 
     const toggleForm  = (v) =>{
     setFormIsActive(v)
     }
+    const setSelectedService  = (v) =>{
+        console.log(v);
+        setServiceType(v)
+    }
     
     return(
-        <FormContext.Provider value={{formIsActive,toggleForm}}>
+        <FormContext.Provider value={{formIsActive,toggleForm,serviceType,setSelectedService}}>
             {
                 children
             }

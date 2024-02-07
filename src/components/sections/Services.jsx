@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import ServiceCard from "../reuseables/ServiceCard";
 
 //images
@@ -98,9 +99,13 @@ const Services = () => {
           );
         })}
       </motion.ul>
-      <motion.button className="rounded-[1.875rem] mt-[2.21rem]  default-font bg-[#3956f0] text-white p-2.5 w-[10.25rem]">
+      <Link to="/services">
+
+      <motion.button  className="rounded-[1.875rem] mt-[2.21rem]  default-font bg-[#3956f0] text-white p-2.5 w-[10.25rem]">
         Explore More
       </motion.button>
+      </Link>
+
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const About = () => {
 
@@ -80,12 +81,15 @@ const About = () => {
         </motion.p>
         {
           location.pathname !== "/about" && 
+          <Link to="/about">
         <motion.button
           variants={textVariants}
           className=" mt-[2rem] rounded-[1.875rem] default-font bg-[#3956f0] text-white p-2.5 w-[10.25rem]"
-        >
+          >
           Learn More
-              </motion.button>}
+              </motion.button>
+          </Link>
+              }
       </motion.div>
     </div>
   );

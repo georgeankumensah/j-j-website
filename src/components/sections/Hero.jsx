@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
+import { useFormContext } from "../../contexts/FormContext"
 
 import heroImage from "../../assets/heroImage.png";
 
@@ -30,6 +31,13 @@ const Hero = () => {
     },
   };
 
+  const { formIsActive, toggleForm } = useFormContext();
+
+
+  const handleClick = ()=>{
+    toggleForm(true)
+  }
+
   return (
     <div className="flex flex-col   lg:flex-row items-center  lg:h-screen   px-[1.9rem]  lg:px-[8.75rem] ">
       <motion.div
@@ -52,6 +60,7 @@ const Hero = () => {
           Western Suburbs
         </motion.h3>
         <motion.button
+        onClick={handleClick}
           variants={textVariants}
           className="rounded-[1.875rem] default-font bg-[#3956f0] text-white p-2.5 w-[10.25rem]"
         >

@@ -35,13 +35,28 @@ const MessageForm = () => {
   };
 
 
-
+  
+  
+  
   const handleSubmit = () => {
+    const url = "https://emailvalidation.abstractapi.com/v1/?api_key=d812c7ba33944368bc4e2d5c883730c4&email=georgeankumensah@gmail.com"
+    function httpGetAsync(url, callback) {
+      const xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function() {
+          if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
+          callback(xmlHttp.responseText);
+      }
+      xmlHttp.open("GET", url, true); // true for asynchronous
+      xmlHttp.send(null);
+  }
+  
+  
+  httpGetAsync(url)
 
     e.preventDefault();
-    const { name, email, message } = formData;
-    const mailtoLink = `mailto:someone@example.com?subject=Message%20from%20${name}&body=${message}%0A%0AReply%20to:%20${email}`;
-    window.location.href = mailtoLink;
+    // const { name, email, message } = formData;
+    // const mailtoLink = `mailto:georgeankumensah@gmail.com?subject=Message%20from%20${name}&body=${message}%0A%0AReply%20to:%20${email}`;
+    // window.location.href = mailtoLink;
     toggleForm(false);
   }
 

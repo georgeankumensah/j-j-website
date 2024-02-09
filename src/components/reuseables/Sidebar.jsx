@@ -7,7 +7,6 @@ const links = [
   { name: "Home", to: "/", id: 1 },
   { name: "About", to: "/about", id: 2 },
   { name: "Services", to: "/services", id: 3 },
-  { name: "Contact", to: "#", id: 4 }
 ];
 const itemVariants = {
   closed: {
@@ -34,16 +33,16 @@ export default function Sidebar() {
 
   return (
     <main>
-        <div className="btn-container">
-       
-       <GrMenu onClick={cycleOpen}/>
+      <div className="btn-container">
 
-  
- </div>
+        <GrMenu onClick={cycleOpen} />
+
+
+      </div>
       <AnimatePresence>
-      
+
         {open && (
-            
+
           <motion.aside
             initial={{ width: 0 }}
             animate={{
@@ -63,7 +62,7 @@ export default function Sidebar() {
               exit="closed"
               variants={sideVariants}
             >
-                       {open && <GrClose onClick={cycleOpen} className="mb-[30px]"/>}
+              {open && <GrClose onClick={cycleOpen} className="mb-[30px]" />}
 
               {links.map(({ name, to, id }) => (
                 <motion.a
@@ -80,7 +79,7 @@ export default function Sidebar() {
           </motion.aside>
         )}
       </AnimatePresence>
-      
+
     </main>
   );
 }

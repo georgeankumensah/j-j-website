@@ -19,8 +19,8 @@ const Testimonials = () => {
     {
       id: 3,
       message:
-        "I loved coming home  to a clean, fresh smelling  home and being able to  relax and spend time with my family instead of  worrying about cobwebs.  Thank you so much!",
-      name: "Jodi R.",
+        "Your attention to detail is impressive! Thanks for making our home sparkle.",
+      name: "Liam Cooper",
       country: "Charleston, SC",
     },
   ];

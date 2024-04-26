@@ -82,7 +82,7 @@ const MessageForm = () => {
           <button onClick={handleClose} className='bg-red-800 font-bold text-white py-2 px-3 rounded-md'>Close</button>
         </div>
 
-        <p>Call us Directly  <b className='ml-[50px]'>0431 192 524</b></p>
+        <p>Call us Directly  <b className='ml-[50px]'>0466 897 856</b></p>
         <div className="flex justify-between gap-[30px] mt-3 items-start">
 
           <p className='w-[160px]'>Locate Us</p>

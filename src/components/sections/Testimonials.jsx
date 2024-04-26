@@ -7,21 +7,21 @@ const Testimonials = () => {
       message:
         "Your company goes above and beyond what we expect and the employees  are very very nice!",
       name: "Jodi R.",
-      country: "Charleston, SC",
+      country: "Melbourne , Australia",
     },
     {
       id: 2,
       message:
         "I loved coming home  to a clean, fresh smelling  home and being able to  relax and spend time with my family instead of  worrying about cobwebs.  Thank you so much!",
-      name: "Jodi R.",
-      country: "Charleston, SC",
+      name: "Raul Mendez",
+      country: "Melbourne , Australia",
     },
     {
       id: 3,
       message:
         "Your attention to detail is impressive! Thanks for making our home sparkle.",
       name: "Liam Cooper",
-      country: "Charleston, SC",
+      country: "Melbourne , Australia",
     },
   ];
   return (

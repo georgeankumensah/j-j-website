@@ -4,7 +4,7 @@ import contactImage from "../../assets/contact.png";
 const Contact = () => {
 
   const handleCall = () => {
-    window.location.href = `tel:0450544573`;
+    window.location.href = `tel:0466897856`;
   };
   return (
     <div className="flex justify-between bg-[#3956f0] gap-[1.75rem] lg:h-[28.3125rem] md:px-[8.75rem] py-[4.5rem]  px-[1.9rem]  lg:px-[8.75rem] mt-[8.25rem] relative ">
